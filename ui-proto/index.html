@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>1 Col Portfolio - Start Bootstrap Template</title>
+      <!-- Bootstrap Core CSS -->
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+      <!-- Custom CSS -->
+      <link href="css/1-col-portfolio.css" rel="stylesheet">
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <style>
+         .h1, .h2, .h3, h1, h2, h3 {
+         margin-top: 0px;
+         }
+         .fa { color: #DE820C; font-size:30px;}
+         h1{ font-size:28px;}
+         .navbar {
+         margin-bottom: 0px;
+         }
+         .btn-primary{ background-color:#0AA6CA;}
+         .page-header {
+         margin: 10px 0 20px;
+         }
+         .hep_main_container {
+         background-color: white;
+         margin-top: -19px;
+         -webkit-box-shadow: 0px 0px 6px 0 #404040;
+         box-shadow: 0px 0px 6px 0 #404040;
+         }
+         .navbar-inner, .navbar {
+         border-bottom: 1px solid white;
+         background: #5588aa;
+         background: -moz-linear-gradient(top, #40A7B9, #1D689C 0%);
+         background: -webkit-linear-gradient(top, #40A7B9, #1D689C);
+         }
+         body { background-color: #A5A5A5;}
+         .navbar-inverse .navbar-nav>li>a {
+         color: white;
+         }
+         .navbar-inverse .navbar-brand {
+         color: #DE820C;
+         }
+         /**  Train Status **/
+         .circlenav { margin: 20px 0;
+          text-align: center;
+          padding-top: 20px;
+          padding-bottom: 20px;
+         }
+         .circlenav ul {
+         text-align: justify;
+         position: relative;
+         overflow: hidden;
+         margin: 0;
+         }
+         .circlenav  ul:before, .circlenav .active:after {
+         content: '';
+         width: 100%;
+         /* border: 2px solid #21a2d1; */
+         position: absolute;
+         top: 1em;
+         margin-top: 6px;
+         }
+         .circlenav .active:after {
+         border-color: #b7b7b7;
+         }
+         .circlenav ul:after {
+         content: "";
+         display: inline-block;
+         width: 100%;
+         }
+         .circlenav li {
+         width: 2.0em;
+         height: 2.0em;
+         text-align: center;
+         line-height: 1.7em;
+         border-radius: 50%;
+         background: #E2B42B;
+         margin: 0 1em;
+         display: inline-block;
+         color: white;
+         font-size: 1em;
+         }
+         .circlenav li a { color: white;}
+         .circlenav .marker-number {
+         font-size: 16px;
+         }
+         .circlenav li.active {
+         background: #E65C16;
+         }
+         .circlenav .active ~ li {
+         /* background: #b7b7b7; */
+         }
+         .circlenav span.marker-text {
+         color: black;
+         font-size: 13px;
+         line-height: 16px;
+         width: 70px;
+         display: block;
+         margin-left: -21px;
+         margin-top: 20px;
+         }
+         .well {
+        padding-top: 40px;
+         background-color: none;
+         border: none;
+         }
+         .well a{ color: #D48826;}
+         .img-circle {
+           border-radius: 50%;
+          }
+      </style>
+      <!-- jQuery -->
+      <script src="js/jquery.js"></script>
+      <!-- Bootstrap Core JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      <script type="text/javascript">
+         $(document).ready(function() {
+         $(".btn-pref .btn").click(function () {
+             $(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
+             // $(".tab").addClass("active"); // instead of this do the below
+             $(this).removeClass("btn-default").addClass("btn-primary");
+             $(".fa").css( "fontSize", "14px" );;
+             $(".fa", this).css( "fontSize", "30px" );
+         });
+         $(".btn").mouseup(function(){
+           $(this).blur();
+         });
+
+         });
+      </script>
+   </head>
+   <body>
+      <!-- Navigation -->
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+         <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="#">Profiles</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav">
+                  <li>
+                     <a href="#">Help</a>
+                  </li>
+
+               </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+         </div>
+         <!-- /.container -->
+      </nav>
+      <!-- Page Content -->
+      <div class="container hep_main_container ">
+        <div class="row"><p>
+          <div class="circlenav">
+
+                  <h2> Welcome to Higher Ed Profiles </h2>
+                   Engaging Analytics
+
+             <div class="lgc-clear"></div>
+             <p></p>
+          </div>
+       </div>
+         <!-- Page Heading -->
+         <div class="row">
+            <div class="col-lg-12">
+               <!--                <h1 class="page-header">Page Heading</h1> -->
+               <div>
+                  <div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" aria-label="...">
+                     <div class="btn-group" role="group">
+                        <button type="button" id="stars" class="btn btn-primary" href="#tab1" data-toggle="tab">
+                           <i class="fa fa-users slf_orange slf_huge"></i>
+                           <div class="hidden-xs">Enrollment</div>
+                        </button>
+                     </div>
+                     <div class="btn-group" role="group">
+                        <button type="button" id="favorites" class="btn btn-default" href="#tab2" data-toggle="tab">
+                           <i class="fa fa-book slf_orange slf_huge"></i>
+                           <div class="hidden-xs">Courses</div>
+                        </button>
+                     </div>
+                     <div class="btn-group" role="group">
+                        <button type="button" id="following" class="btn btn-default" href="#tab3" data-toggle="tab">
+                           <i class="fa fa-graduation-cap slf_orange slf_huge"></i>
+                           <div class="hidden-xs">Completions</div>
+                        </button>
+                     </div>
+                     <div class="btn-group" role="group">
+                        <button type="button" id="following" class="btn btn-default" href="#tab3" data-toggle="tab">
+                           <i class="fa fa-pencil-square-o slf_orange slf_huge"></i>
+                           <div class="hidden-xs">Applications</div>
+                        </button>
+                     </div>
+                  </div>
+                  <div class="well">
+                    <p><p>
+                     <div class="tab-content">
+                        <div class="tab-pane fade in active" id="tab1">
+                           <div class="row">
+                              <div class="col-md-6">
+                                 <!-- Project One -->
+                                 <div class="row">
+                                    <div class="col-md-4">
+                                       <a href="#">
+                                       <img class="img-responsive img-circle" src="./img/chart3.jpg" alt="">
+                                       </a>
+                                    </div>
+                                    <div class="col-md-8">
+                                       <h3><a href="#"> Academic Standing Changes </a></h3>
+                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+                                    </div>
+                                 </div>
+                                 <!-- /.row -->
+                                 <hr>
+                                 <!-- Project Two -->
+                                 <div class="row">
+                                    <div class="col-md-4">
+                                       <a href="#">
+                                       <img class="img-responsive  img-circle" src="./img/pivot.png" alt="">
+                                       </a>
+                                    </div>
+                                    <div class="col-md-8">
+                                       <h3><a href="#"> Headcount </a></h3>
+                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
+                                    </div>
+                                 </div>
+                                 <!-- /.row -->
+                                 <hr>
+
+                                 <!-- /.row -->
+                              </div>
+                              <!-- /.col6 -->
+                              <div class="col-md-6">
+                                 <!-- Project One -->
+                                 <div class="row">
+                                   <div class="col-md-4">
+                                      <a href="#">
+                                      <img class="img-responsive  img-circle" src="./img/chart1.jpg" alt="">
+                                      </a>
+                                   </div>
+                                   <div class="col-md-8">
+                                      <h3><a href="#"> Headcount Trends </a></h3>
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
+                                   </div>
+                                 </div>
+                                 <!-- /.row -->
+                                 <hr>
+                                 <!-- Project Two -->
+                                 <div class="row">
+                                   <div class="col-md-4">
+                                      <a href="#">
+                                      <img class="img-responsive  img-circle" src="./img/chart2.jpg" alt="">
+                                      </a>
+                                   </div>
+                                   <div class="col-md-8">
+                                      <h3><a href="#"> Student Major Changes </a></h3>
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
+                                   </div>
+                                 </div>
+                                 <!-- /.row -->
+                                 <hr>
+                                 <!-- Project Three -->
+
+                                 <!-- /.row -->
+                              </div>
+                              <!-- /.col6 -->
+                           </div>
+                           <!-- /.row -->
+                        </div>
+                        <div class="tab-pane fade in" id="tab2">
+                          <div class="row">
+                            <div class="col-md-6">
+                               <!-- Project One -->
+                               <div class="row">
+                                  <div class="col-md-4">
+                                     <a href="#">
+                                     <img class="img-responsive img-circle" src="./img/chart3.jpg" alt="">
+                                     </a>
+                                  </div>
+                                  <div class="col-md-8">
+                                     <h3><a href="#"> Academic Standing Changes </a></h3>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+                                  </div>
+                               </div>
+                               <!-- /.row -->
+                               <hr>
+                               <!-- Project Two -->
+                               <div class="row">
+                                  <div class="col-md-4">
+                                     <a href="#">
+                                     <img class="img-responsive  img-circle" src="./img/pivot.png" alt="">
+                                     </a>
+                                  </div>
+                                  <div class="col-md-8">
+                                     <h3><a href="#"> Headcount </a></h3>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
+                                  </div>
+                               </div>
+                               <!-- /.row -->
+                               <hr>
+
+                               <!-- /.row -->
+                            </div>
+                            <!-- /.col6 -->
+                            <div class="col-md-6">
+                               <!-- Project One -->
+                               <div class="row">
+                                 <div class="col-md-4">
+                                    <a href="#">
+                                    <img class="img-responsive  img-circle" src="./img/chart1.jpg" alt="">
+                                    </a>
+                                 </div>
+                                 <div class="col-md-8">
+                                    <h3><a href="#"> Headcount Trends </a></h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
+                                 </div>
+                               </div>
+                               <!-- /.row -->
+                               <hr>
+                               <!-- Project Two -->
+                               <div class="row">
+                                 <div class="col-md-4">
+                                    <a href="#">
+                                    <img class="img-responsive  img-circle" src="./img/chart2.jpg" alt="">
+                                    </a>
+                                 </div>
+                                 <div class="col-md-8">
+                                    <h3><a href="#"> Student Major Changes </a></h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
+                                 </div>
+                               </div>
+                               <!-- /.row -->
+                               <hr>
+                               <!-- Project Three -->
+
+                               <!-- /.row -->
+                            </div>
+                             <!-- /.col6 -->
+                          </div>
+                        </div>
+                        <div class="tab-pane fade in" id="tab3">
+                          <div class="col-md-6">
+                             <!-- Project One -->
+                             <div class="row">
+                                <div class="col-md-4">
+                                   <a href="#">
+                                   <img class="img-responsive img-circle" src="./img/chart3.jpg" alt="">
+                                   </a>
+                                </div>
+                                <div class="col-md-8">
+                                   <h3><a href="#"> Academic Standing Changes </a></h3>
+                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+                                </div>
+                             </div>
+                             <!-- /.row -->
+                             <hr>
+                             <!-- Project Two -->
+                             <div class="row">
+                                <div class="col-md-4">
+                                   <a href="#">
+                                   <img class="img-responsive  img-circle" src="./img/pivot.png" alt="">
+                                   </a>
+                                </div>
+                                <div class="col-md-8">
+                                   <h3><a href="#"> Headcount </a></h3>
+                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
+                                </div>
+                             </div>
+                             <!-- /.row -->
+                             <hr>
+
+                             <!-- /.row -->
+                          </div>
+                          <!-- /.col6 -->
+                          <div class="col-md-6">
+                             <!-- Project One -->
+                             <div class="row">
+                               <div class="col-md-4">
+                                  <a href="#">
+                                  <img class="img-responsive  img-circle" src="./img/chart1.jpg" alt="">
+                                  </a>
+                               </div>
+                               <div class="col-md-8">
+                                  <h3><a href="#"> Headcount Trends </a></h3>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
+                               </div>
+                             </div>
+                             <!-- /.row -->
+                             <hr>
+                             <!-- Project Two -->
+                             <div class="row">
+                               <div class="col-md-4">
+                                  <a href="#">
+                                  <img class="img-responsive  img-circle" src="./img/chart2.jpg" alt="">
+                                  </a>
+                               </div>
+                               <div class="col-md-8">
+                                  <h3><a href="#"> Student Major Changes </a></h3>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
+                               </div>
+                             </div>
+                             <!-- /.row -->
+                             <hr>
+                             <!-- Project Three -->
+
+                             <!-- /.row -->
+                          </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+         <!-- /.row -->
+         <hr>
+         <!-- Pagination -->
+         <div class="row text-center">
+            <div class="col-lg-12">
+               <ul class="pagination">
+                  <li>
+                     <a href="#">&laquo;</a>
+                  </li>
+                  <li class="active">
+                     <a href="#">1</a>
+                  </li>
+                  <li>
+                     <a href="#">2</a>
+                  </li>
+                  <li>
+                     <a href="#">3</a>
+                  </li>
+                  <li>
+                     <a href="#">4</a>
+                  </li>
+                  <li>
+                     <a href="#">5</a>
+                  </li>
+                  <li>
+                     <a href="#">&raquo;</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <!-- /.row -->
+         <hr>
+         <!-- Footer -->
+         <footer>
+            <div class="row">
+               <div class="col-lg-12">
+                  <p>Copyright &copy; Your Website 2014</p>
+               </div>
+            </div>
+            <!-- /.row -->
+         </footer>
+      </div>
+      <!-- /.container -->
+   </body>
+</html>
